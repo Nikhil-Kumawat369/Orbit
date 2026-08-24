@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* Now importing the themes */
+@import "./CSS/themes.css";
+
+/* Now importing all the fonts */
+@import "./CSS/fonts.css";
