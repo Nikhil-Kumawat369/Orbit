@@ -1,2 +1,6 @@
 # Not tracking the node modules
 node_modules/
+
+# Every developer is allowed to create any kind of temporary files, folder they need while working on Orbit
+# So whatever they want to create, should be created in this below folder, So any kind of temporary file is not committed by a mistake
+temp/
