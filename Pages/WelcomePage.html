@@ -1,55 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome Page</title>
 
     <!-- Connecting the tailwindcss output.css file -->
-    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="../output.css" />
 
     <!-- Linking all the google fonts used in this entire project -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
-
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- This following div will be treated as the body -->
-    <div class="min-h-screen min-w-screen bg-[#fcf9f8] text-(--on-surface) google-fonts-inter flex flex-col justify-start items-center">
+    <div
+      class="google-fonts-inter flex min-h-screen min-w-screen flex-col items-center justify-start bg-[#fcf9f8] text-(--on-surface)"
+    >
+      <!-- This is the header -->
+      <header
+        class="google-fonts-inter flex w-full flex-row items-center justify-center p-8 text-(--on-surface)"
+      >
+        <!-- This is the app name -->
+        <h1
+          class="google-fonts-hanken-grotesk text-5xl font-bold text-[#004394]"
+        >
+          Orbit
+        </h1>
+      </header>
 
-        <!-- This is the header -->
-        <header class="google-fonts-inter text-(--on-surface) flex flex-row w-full p-8 justify-center items-center">
+      <!-- this is the main -->
+      <main
+        class="google-fonts-inter mx-auto flex w-[80%] flex-col items-center justify-center p-8 text-(--on-surface) max-sm:w-[90%]"
+      >
+        <h2
+          class="google-fonts-hanken-grotesk mb-4 text-center text-[40px] font-bold text-(--on-surface)"
+        >
+          Track your workouts. Own your data.
+        </h2>
 
-            <!-- This is the app name -->
-            <h1 class="google-fonts-hanken-grotesk text-5xl font-bold text-[#004394]">Orbit</h1>
+        <p
+          class="google-fonts-inter text-center text-[16px] font-normal text-[#424753]"
+        >
+          No subscription. No sign-up. No locked features.
+        </p>
 
-        </header>
-
-        <!-- this is the main -->
-        <main class="google-fonts-inter text-(--on-surface) w-[80%] mx-auto flex flex-col justify-center items-center p-8">
-
-            <h2 class="text-center mb-4 google-fonts-hanken-grotesk text-[40px] font-bold text-(--on-surface)">Track your workouts. Own your data.</h2>
-
-            <p class="text-center google-fonts-inter text-[16px] font-normal text-[#424753]">No subscription. No sign-up. No locked features.</p>
-
-            <!-- This div shows the benefits of using Orbit -->
-            <div class="google-fonts-inter text-(--on-surface) grid grid-rows-2 grid-cols-2 gap-4 w-full mt-10">
-
-                <!-- First item: Everything Free -->
-                <div class="google-fonts-inter text-(--on-surface) bg-[color-mix(in_srgb,#FEF7FF_70%,transparent)] border border-solid border-[color-mix(in_srgb,#C2C6D6_40%,transparent)] flex flex-cols rounded-2xl p-6 backdrop-blur-md">
-
-
-
-                </div>
-
+        <!-- This div shows the benefits of using Orbit -->
+        <div
+          class="google-fonts-inter mt-10 mb-20 grid w-full grid-cols-2 grid-rows-2 gap-4 text-(--on-surface) max-[450px]:grid-cols-1 max-[450px]:grid-rows-4"
+        >
+          <!-- 1'st item: Everything Free -->
+          <div
+            class="google-fonts-inter flex cursor-pointer flex-col items-start justify-start rounded-2xl border border-solid border-[color-mix(in_srgb,#C2C6D6_40%,transparent)] bg-[color-mix(in_srgb,#FEF7FF_70%,transparent)] p-6 text-(--on-surface) backdrop-blur-md transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-(--primary) hover:bg-(--surface-container) hover:shadow-(--outline-variant) active:translate-y-0 active:border-(--primary-fixed-dim) active:bg-(--surface-variant) active:shadow-sm"
+          >
+            <!-- Symbol -->
+            <div class="mb-4 rounded-xl bg-(--primary-fixed) p-3">
+              <img src="../assets/Welcome_Page_assets/money_off_icon.svg" />
             </div>
 
-        </main>
+            <!-- The benefit -->
+            <h3
+              class="google-fonts-hanken-grotesk mb-1 text-xl font-semibold text-(--on-surface)"
+            >
+              Everything Free
+            </h3>
 
+            <!-- Description -->
+            <p class="google-fonts-inter text-sm font-normal text-[#424753]">
+              No subscription. No workout limits. No locked programs. No premium
+              insights.
+            </p>
+          </div>
+
+          <!-- 2'nd item: No Account Required -->
+          <div
+            class="google-fonts-inter flex cursor-pointer flex-col items-start justify-start rounded-2xl border border-solid border-[color-mix(in_srgb,#C2C6D6_40%,transparent)] bg-[color-mix(in_srgb,#FEF7FF_70%,transparent)] p-6 text-(--on-surface) backdrop-blur-md transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-(--primary) hover:bg-(--surface-container) hover:shadow-(--outline-variant) active:translate-y-0 active:border-(--primary-fixed-dim) active:bg-(--surface-variant) active:shadow-sm"
+          >
+            <!-- Symbol -->
+            <div class="mb-4 rounded-xl bg-(--primary-fixed) p-3">
+              <img src="../assets/Welcome_Page_assets/no_account_icon.svg" />
+            </div>
+
+            <!-- The benefit -->
+            <h3
+              class="google-fonts-hanken-grotesk mb-1 text-xl font-semibold text-(--on-surface)"
+            >
+              No Account Required
+            </h3>
+
+            <!-- Description -->
+            <p class="google-fonts-inter text-sm font-normal text-[#424753]">
+              Start tracking immediately. No login. No sign-up.
+            </p>
+          </div>
+
+          <!-- 3'rd item: Your Data Stays Yours -->
+          <div
+            class="google-fonts-inter flex cursor-pointer flex-col items-start justify-start rounded-2xl border border-solid border-[color-mix(in_srgb,#C2C6D6_40%,transparent)] bg-[color-mix(in_srgb,#FEF7FF_70%,transparent)] p-6 text-(--on-surface) backdrop-blur-md transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-(--primary) hover:bg-(--surface-container) hover:shadow-(--outline-variant) active:translate-y-0 active:border-(--primary-fixed-dim) active:bg-(--surface-variant) active:shadow-sm"
+          >
+            <!-- Symbol -->
+            <div class="mb-4 rounded-xl bg-(--primary-fixed) p-3">
+              <img src="../assets/Welcome_Page_assets/security_icon.svg" />
+            </div>
+
+            <!-- The benefit -->
+            <h3
+              class="google-fonts-hanken-grotesk mb-1 text-xl font-semibold text-(--on-surface)"
+            >
+              Your Data Stays Yours
+            </h3>
+
+            <!-- Description -->
+            <p class="google-fonts-inter text-sm font-normal text-[#424753]">
+              Your workout data stays on your device. We don't store or access
+              it.
+            </p>
+          </div>
+
+          <!-- 4'th item: Take Your Data With You -->
+          <div
+            class="google-fonts-inter flex cursor-pointer flex-col items-start justify-start rounded-2xl border border-solid border-[color-mix(in_srgb,#C2C6D6_40%,transparent)] bg-[color-mix(in_srgb,#FEF7FF_70%,transparent)] p-6 text-(--on-surface) backdrop-blur-md transition-all duration-300 ease-in-out hover:-translate-y-1 hover:border-(--primary) hover:bg-(--surface-container) hover:shadow-(--outline-variant) active:translate-y-0 active:border-(--primary-fixed-dim) active:bg-(--surface-variant) active:shadow-sm"
+          >
+            <!-- Symbol -->
+            <div class="mb-4 rounded-xl bg-(--primary-fixed) p-3">
+              <img src="../assets/Welcome_Page_assets/mobile_check_icon.svg" />
+            </div>
+
+            <!-- The benefit -->
+            <h3
+              class="google-fonts-hanken-grotesk mb-1 text-xl font-semibold text-(--on-surface)"
+            >
+              Take Your Data With You
+            </h3>
+
+            <!-- Description -->
+            <p class="google-fonts-inter text-sm font-normal text-[#424753]">
+              Export your complete workout data and import it on another device
+              whenever you want.
+            </p>
+          </div>
+        </div>
+
+        <!-- This is the btn -->
+        <button
+          class="google-fonts-hanken-grotesk fixed bottom-4 flex cursor-pointer flex-row items-center justify-center gap-2 rounded-full bg-[#004394] px-8 py-4 text-xl font-semibold text-(--surface-container-lowest) transition-all duration-200 ease-in-out hover:-translate-y-1 hover:bg-(--primary) hover:shadow-(--outline-variant) active:translate-y-0 active:scale-95 active:bg-(--on-primary-fixed) active:shadow-sm"
+        >
+          Get Started
+          <img src="../assets/Welcome_Page_assets/arrow_forward_icon.svg" />
+        </button>
+      </main>
     </div>
-    
-</body>
+  </body>
 </html>
