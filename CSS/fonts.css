@@ -1,0 +1,15 @@
+/* This file contains all the fonts used in this project */
+
+/* Inter */
+.google-fonts-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* hanken grotesk */
+.google-fonts-hanken-grotesk {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}

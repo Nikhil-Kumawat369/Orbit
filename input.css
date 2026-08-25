@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+/* Now importing the themes */
+@import "./CSS/themes.css";
+
+/* Now importing all the fonts */
+@import "./CSS/fonts.css";
+
+/* Removing Scroll bars */
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
